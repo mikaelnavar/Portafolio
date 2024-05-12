@@ -1,0 +1,345 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+.menu__list {
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    padding: 0;
+    background: var(--cor-de-fundo);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.menu__list__item {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: 'Raleway';
+    color: black;
+    text-decoration: double;/* OJO quitar esto y cambiarrlo por incremento*/
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.menu__list__item:hover{
+    background-color: rgb(225, 225, 240);
+    border-radius: 100px;
+    padding: 20px;
+    transition: .2s;
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    background: var(--cor-de-fundo);
+}
+
+.title__profile {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.title__container {
+    width: 60%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.title__bio{
+    font-weight: bold;
+    font-size: 62px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    line-height: 1.3;
+    text-align:left;
+}
+
+.title__subsection {
+    font-size: 44px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* link redes socilaes */
+
+.title__network {
+    margin: 2px;
+    padding: 5px;
+    justify-content: left;
+    gap: 28px;
+    font-size: 40px;
+}
+
+.title__network__item:hover {
+    font-size: 42px;
+    transition: .2s;
+    color: gray;
+}
+
+/* SOBRE MI */
+
+.about {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-de-fundo);
+}
+
+.about__container{
+    width: 70%;
+    height: auto;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.about__paragraph{
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.skills {
+    padding: 10px;
+    background: var(--cor-de-fundo);
+}
+
+.skills__img img{
+    width: 50px;
+    height: auto;
+    flex: none;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.skills__name, .hobbies__name {
+    margin-left: 10px;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+/* SECCION HOBBIE */
+
+.hobbies {
+    display: flex;
+    padding: 20px;
+    background: var(--cor-de-fundo);
+    align-items: center;
+    flex-direction: column;
+}
+
+.hobbies__line {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hobbies__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /*opacity: 0.8; OJO con esto hay que quitarlo */
+    padding: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.hobbies__img img{
+    width: 50px;
+    height: auto;
+    flex: none;
+    margin-top: 10px;
+    align-self: center;
+}
+
+
+/*section.menu{
+    background-color: var(--cor-de-fundo);
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+    font-size: 20px;    
+}
+
+.menu__header {
+    padding: 15px 65px;
+    gap: 15px;
+    cursor: pointer; 
+}
+
+.menu__header:hover {
+    font-size: 22px;
+}
+
+.menu__list {
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    padding: 0;
+    background-color: var(--cor-de-fundo);
+    
+    padding: 20px;
+}
+
+li:hover {
+    font-size: 22px;
+    transition: .2s;
+}*/
+
+
+
+/*Sección Title*/
+/*
+section.title{
+    background-color: antiquewhite;
+    padding: 153px 20px 10px 20px;
+
+}
+
+.title__bio {
+    font-size: 80px;
+    width: 751px;
+    height: 246px;
+    padding: 30px 30px;
+}
+*/
+/*Sección About*/
+
+section.about{
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}

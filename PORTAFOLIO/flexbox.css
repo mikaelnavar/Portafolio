@@ -1,0 +1,229 @@
+/* MENU */
+.menu__list {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+}
+
+.menu__list__item {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__div {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__network {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.title__network__item {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__paragraph {
+    display: flex;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about__title, .skills__title, .hobbies__title, .academic__title, .experience__section__title {
+    font-weight: bold;
+    text-align: center;
+    font-style: oblique;
+    font-size: 35px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.skills__line {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /*opacity: 0.8; OJO con esto hay que quitarlo */
+    padding: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.skills__name, .hobbies__name {
+    display: flex;
+    
+}
+
+
+
+
+/*.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;   
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    }
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;  
+      
+}
+
+
+
+.menu__list__item__contato{
+    display: none;
+}*/
+
+
+
+
+/* Sección del Header/Title/Hero */
+
+/*
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around; 
+     
+}
+
+.title__network{
+    display: flex;
+    gap: 20px;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.hobbies__line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.academic {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experiencie__box {
+    display: flex;
+    align-items: center;
+}
+
+.experience__box{
+    display: flex;
+    align-items: center;
+}
+
+.formcontato {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.formcontato__contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    }
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+}
+*/
+
+
+
+
+
+
